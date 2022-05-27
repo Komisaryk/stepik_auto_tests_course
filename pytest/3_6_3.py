@@ -7,16 +7,7 @@ import time
 import math
 
 
-@pytest.fixture(scope="function")
-def browser():
-    print("\nstart browser for test..")
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    browser = webdriver.Chrome(options=options)
-    browser.implicitly_wait(5)
-    yield browser
-    print("\nquit browser..")
-    browser.quit()
+
 
 links = [
     ("link1","stepik.org/lesson/236895/step/1"),
