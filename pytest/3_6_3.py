@@ -6,9 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import math
 
-
-
-
 links = [
     ("link1","stepik.org/lesson/236895/step/1"),
     ("link2","stepik.org/lesson/236896/step/1"),
